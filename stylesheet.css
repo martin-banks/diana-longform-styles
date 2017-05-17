@@ -155,8 +155,8 @@ div.longform-group-inner.story-content.standard {
 }
 /* body text */
 div.longform-group-inner.story-content.standard p {
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 18px;
+	line-height: 28px;
 	margin-bottom: 20px;
 	margin-top: 20px;
 }
@@ -211,7 +211,7 @@ p span.unique_headline {
 p span.unique_headline:before {
 	content: '';
 	display: block;
-	background-image: url('http://media.news.com.au/nnd/T3Interactives/undatedProjects/obit_queen_longform/images/flourish_spacer.png');
+	background-image: url('http://media.news.com.au/nnd/T3Interactives/undatedProjects/longformStyle_serif/images/spacer.png');
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	background-size: 250px;
@@ -226,13 +226,14 @@ div.longform-group-inner.story-content.standard p span.h2 {
 	font-weight: 300;
 	font-size: 32px;
 	line-height: 34px;
-	margin: -24px 0 32px 0;
-	padding-top: 8px;
+	margin: 40px 0 32px 0;
+	/*padding-top: 8px;*/
+	padding-bottom: 16px;
+	border-bottom: solid 1px #888;
 	letter-spacing: -0.5px;
-	color: #8d5998;
+	color: #000;
 	font-weight: 300;
-	/* border-bottom: solid 1px #ccc; */
-	/* padding-bottom: 100px; */
+	
 	width: auto;
 	letter-spacing: -0.5px;
 	text-rendering: geometricprecision;
@@ -290,16 +291,21 @@ p.first + p + p + p:first-letter {
 
 
 /*dropcaps */
-.longform-group-inner.story-content.standard > p:first-of-type:first-letter {
+.longform-group.standard-child:first-of-type .longform-group-inner.story-content.standard > p:first-of-type:first-letter {
 	float: left;
-	color: #000;
-	font-size: 54px;
+	color: white;
+	font-size: 29px;
+	background: black;
 	font-weight: 100;
-	line-height: 50px;
-	padding-top: 4px;
-	padding-right: 8px;
-	padding-left: 0px;
+	line-height: 38px;
+	margin-top: 5px;
+	padding-top: 0px;
+	padding-right: 16px;
+	padding-left: 16px;
+	padding-bottom: 4px;
 	font-family: "Playfair Display", "Merriweather", "Times New Roman", serif;
+	font-weight: 800;
+	margin-right: 8px;
 }
 
 
@@ -387,7 +393,7 @@ div.longform-group-inner.story-content.standard p span.blockquote b {
 div.longform-group-inner.story-content.standard p span.blockquote b:after {
 	content: '';
 	display: block;
-	background-image: url('http://media.news.com.au/nnd/T3Interactives/undatedProjects/obit_queen_longform/images/flourish_blockquote.png');
+	background-image: url('http://media.news.com.au/nnd/T3Interactives/undatedProjects/longformStyle_serif/images/blockquote.png');
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	background-size: 72px;
@@ -437,8 +443,8 @@ div.longform-group.standard-child.highlight.byline div.intro {
 	border-top: solid 1px #ccc;
 	border-bottom: solid 1px #ccc; 
 	font-family: "Merriweather", Georgia, serif;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: 24px;
+	line-height: 32px;
 	text-transform: none;
 	color: #777;
 	width: 90%;
@@ -450,7 +456,7 @@ div.longform-group.standard-child.highlight.byline div.intro {
 div.longform-group.standard-child.highlight.byline div.intro p:after {
 	content: '';
 	display: block;
-	background-image: url('http://media.news.com.au/nnd/T3Interactives/undatedProjects/obit_queen_longform/images/flourish_byline.png');
+	background-image: url('http://media.news.com.au/nnd/T3Interactives/undatedProjects/longformStyle_serif/images/byline.png');
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	background-size: 120px;
@@ -470,10 +476,10 @@ div.asset-promo.promo-splash div.promo-title {
 h1.story-header_title {
 	text-shadow: none;
 	font-family: "Playfair Display", "Merriweather", "Times New Roman", serif;
-	font-weight: 100;
+	font-weight: 600;
 	text-rendering: geometricprecision;
-	line-height: 1.3em;
-	letter-spacing: -1px;
+	line-height: 1em;
+	letter-spacing: 0;
 	box-shadow: none;
 	text-shadow: 0 2px 4px rgba(0,0,0,0.8)
 }
@@ -510,20 +516,21 @@ h1.story-header_title {
 }
 
 h1.story-header_title:before {
-	content: 'Custom kicker';
+	/*content: '';*/
 	display: table;
 	margin: 0 auto;
-	text-transform: uppercase;
 	letter-spacing: 2px;
 	border-bottom: solid 1px;
+	font-family: "Guardian Sans", sans-serif;
 	font-size: 16px;
 	line-height: 16px;
+	text-transform: uppercase;
+	color: #fff;
 	padding: 8px 40px;
 	margin-bottom: 10px;
-	color:  #888;
 }
 .story-header_title span:nth-of-type(1):before {
-	content: '1926 - 2017';
+	/*content: '';*/
 	display: table;
 	margin: 0 auto;
 	margin-bottom: 12px;
@@ -622,6 +629,22 @@ div.longform-group-inner.story-content.standard figure.story-asset.story-asset-s
 	padding: 4px;
 }
 
+/* force images to always display at full opacity */
+.story-asset.image-half.scene-init {
+	opacity: 1 !important;
+}
+
+/* full width images */
+.longform-group.fullwidth-child {
+	margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1000px) and (orientation: landscape) {
+	figure.promo-image.image-full {
+		height: 80vh;
+	}
+	
+}
 
 
 
@@ -660,8 +683,7 @@ div.longform-group-inner.story-content.standard figure.story-asset.story-asset-s
 	div.longform-group-inner.story-content.standard p span.h2 {
 		font-size: 32px;
 		line-height: 36px;
-		margin: -24px 0 40px 0;
-		padding-top: 40px;
+		margin: 40px 0 8px 0;
 		letter-spacing: -0.5px;
 	}
 
