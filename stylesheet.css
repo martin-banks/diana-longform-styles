@@ -623,6 +623,7 @@ div.longform-group-inner.story-content.standard figure.story-asset.story-asset-s
 	padding: 0;
 	margin-bottom: 24px;
 
+
 }
 div.longform-group-inner.story-content.standard figure.story-asset.story-asset-secondary.image-full figcaption.description {
 	background: none;
@@ -768,16 +769,26 @@ div.longform-group-inner.story-content.standard figure.story-asset.story-asset-s
 	}
 
 	/* inline images */
-	div.longform-group-inner.story-content.standard figure.story-asset.story-asset-secondary.image-full,
-	div.longform-group-inner.story-content.standard figure.story-asset.story-asset-secondary.image-half {
+	.w_story-asset.story-asset-split {
+		padding-right: 0;
+		max-width: 58%;
+	}
+	div.longform-group-inner.story-content.standard figure.story-asset.story-asset-secondary.image-full {
+		box-sizing: border-box;
 		float: right;
 		width: 50%;
 		margin-left: 32px;
 	}
+	div.longform-group-inner.story-content.standard figure.story-asset.story-asset-secondary.image-half {
+		box-sizing: border-box;
+		width: 40%;
+		width: calc(50% - 32px);
+		margin-left: 32px;
+
+	}
 
 
 }
-
 
 
 
