@@ -1,7 +1,6 @@
 /* 
 Prefix for longform only:
 div.longform-group-inner.story-content.standard
-
 */
 
 /* import Playfair Display typeface */
@@ -327,7 +326,7 @@ div.longform-group-inner.story-content.standard figure.story-asset.story-asset-s
 	font-weight: 300 !important;
 	font-size: 16px !important; 
 	letter-spacing: 0.5px !important;
-	/*color: #8d5998 !important;*/
+	/*color: #268dce !important;*/
 }
 
 
@@ -386,7 +385,8 @@ div.longform-group-inner.story-content.standard p span.blockquote b {
 	font-size: 16px;
 	line-height: 16px;
 	font-family: "Guardian Sans", "Open Sans Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-	color: #8d5998;
+	/*color: #268dce;*/
+	color: #666;
 	letter-spacing: 4px;
 	font-weight: 600;
 }
@@ -443,8 +443,8 @@ div.longform-group.standard-child.highlight.byline div.intro {
 	border-top: solid 1px #ccc;
 	border-bottom: solid 1px #ccc; 
 	font-family: "Merriweather", Georgia, serif;
-	font-size: 24px;
-	line-height: 32px;
+	font-size: 18px;
+	line-height: 24px;
 	text-transform: none;
 	color: #777;
 	width: 90%;
@@ -452,6 +452,16 @@ div.longform-group.standard-child.highlight.byline div.intro {
 	min-width: 280px;
 	margin: 0 auto;
 }
+
+@media screen and (min-width: 600px) {
+	div.longform-group.standard-child.highlight.byline div.intro {
+		font-size: 24px;
+		line-height: 32px;
+	}
+	
+}
+
+
 
 div.longform-group.standard-child.highlight.byline div.intro p:after {
 	content: '';
@@ -490,7 +500,7 @@ h1.story-header_title {
 	margin-bottom: 0;
 }
 .asset-promo .promo-inner {
-	background: none;
+	background: none !important;
 }
 .asset-promo.promo-splash.nopadding.image-full {
 	width: 100%;
@@ -503,9 +513,19 @@ h1.story-header_title {
 .header-bottom-center .header-container .header-content {
 	padding-bottom: 0px;
 }
-.longform-group.longform-group-inner.fullwidth-child.header {
-	transform: scale(0.9) translate3d(0, 5%, 0);
+
+.fullwidth-child.header {
+	background: none;
 }
+
+@media screen and (min-width: 800px) {
+	.longform-group.longform-group-inner.fullwidth-child.header {
+		transform: translate3d(0, 5%, 0);
+	}
+	
+}
+
+
 .header-container h1.story-header_title {
 	font-size: 2.4em;
 	margin-bottom: 0;
@@ -565,14 +585,14 @@ h1.story-header_title:before {
 }
 /* progress bar */
 .header-fixed .header-fixed_progress .progress-highlight {
-	background-color: #8d5998;
+	background-color: #268dce;
 }
 /* anchor on bar */
 .header-fixed .header-fixed_progress .progress-item {
 	background: #777;
 }
 .header-fixed .header-fixed_progress .progress-item:hover {
-	background: #8d5998;
+	background: #268dce;
 }
 /* pop up chapter bubble */
 .header-fixed .header-fixed_progress .progress-item .progress-item-container-inner {
@@ -622,9 +642,13 @@ div.longform-group-inner.story-content.standard figure.story-asset.story-asset-s
 	border: none;
 	padding: 0;
 	margin-bottom: 24px;
-
-
 }
+
+figcaption.description {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
 div.longform-group-inner.story-content.standard figure.story-asset.story-asset-secondary.image-full figcaption.description {
 	background: none;
 	padding: 4px;
@@ -638,13 +662,17 @@ div.longform-group-inner.story-content.standard figure.story-asset.story-asset-s
 /* full width images */
 .longform-group.fullwidth-child {
 	margin-bottom: 40px;
+	box-shadow: none;
+	background: none;
 }
+
+
 
 @media screen and (min-width: 1000px) and (orientation: landscape) {
 	figure.promo-image.image-full {
-		height: 80vh;
+		transform: scale(0.9);
 	}
-	
+		
 }
 
 
@@ -661,7 +689,10 @@ div.longform-group-inner.story-content.standard figure.story-asset.story-asset-s
 	}
 	
 	.header-container .story-header_title,
-	h1.story-header_title {
+	h1.story-header_title,
+	.story-header_title span:nth-of-type(1):before,
+	h1.story-header_title:before , 
+	h1.story-header_title:after {
 		color: #000;
 		text-shadow: none;
 	}
@@ -784,7 +815,7 @@ div.longform-group-inner.story-content.standard figure.story-asset.story-asset-s
 		width: 40%;
 		width: calc(50% - 32px);
 		margin-left: 32px;
-
+		margin-right: 0;
 	}
 
 
