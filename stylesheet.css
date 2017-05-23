@@ -672,6 +672,13 @@ div.longform-group-inner.story-content.standard figure.story-asset.story-asset-s
 @media screen and (min-width: 1000px) and (orientation: landscape) {
 	figure.promo-image.image-full {
 		transform: scale(0.9);
+		height: 0;
+		padding-bottom: 40%;
+	}
+	figure.promo-image.image-full img {
+		top: 50%;
+		position: absolute;
+		transform: translateY(-50%);
 	}
 		
 }
