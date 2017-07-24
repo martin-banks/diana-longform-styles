@@ -1,167 +1,10 @@
-/* Put your CSS code in the left column, instead of example, to put or remove unnecessary prefixes. */
 
-.example {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
-    background: linear-gradient(to bottom, white, black);
-}/* 
+/* 
 Prefix for longform only:
 div.longform-group-inner.story-content.standard
 */
 
 /* import Playfair Display typeface */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Playfair Display'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/2NBgzUtEeyB-Xtpr9bm1CRw5vVFbIG7DatP53f3SWfE.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Playfair Display'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/2NBgzUtEeyB-Xtpr9bm1CSVudZg2I_9CBJalMPResNk.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Playfair Display'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/2NBgzUtEeyB-Xtpr9bm1CRD8Ne_KjP89kA3_zOrHj8E.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/UC3ZEjagJi85gF9qFaBgIPa_mHzRnWHPLe_7CTICOmX2Ot9t5h1GRSTIE78Whtoh.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/UC3ZEjagJi85gF9qFaBgIJxPTqqCO-Hoz9CiD4eQWUb2Ot9t5h1GRSTIE78Whtoh.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/UC3ZEjagJi85gF9qFaBgIN4KoCs5_BuQksQmhwRAS2Y.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Playfair Display Black'), local('PlayfairDisplay-Black'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/UC3ZEjagJi85gF9qFaBgIBlMenM75Mf7Z_kMXSnKVlD2Ot9t5h1GRSTIE78Whtoh.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Playfair Display Black'), local('PlayfairDisplay-Black'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/UC3ZEjagJi85gF9qFaBgIG7YhB0YVZSiEWnToa6slzn2Ot9t5h1GRSTIE78Whtoh.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Playfair Display Black'), local('PlayfairDisplay-Black'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/UC3ZEjagJi85gF9qFaBgIAAkx2KIoCAYIUYRcgdW-dU.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/9MkijrV-dEJ0-_NWV7E6Nz503Tq1yhmRUzy-O8coD3P3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/9MkijrV-dEJ0-_NWV7E6N6aYMItQBJgHOR6e-UKEo6f3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/9MkijrV-dEJ0-_NWV7E6NzyJGU1P5M-LlUrAn6CnO9E.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Playfair Display Bold Italic'), local('PlayfairDisplay-BoldItalic'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/n7G4PqJvFP2Kubl0VBLDEJndkReyxAnJZX9jKcKcReiAxg1Bnw5F8n5M1Q3pc3xZ.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Playfair Display Bold Italic'), local('PlayfairDisplay-BoldItalic'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/n7G4PqJvFP2Kubl0VBLDEHkZIlsJG67-QyTgZTAVrcyAxg1Bnw5F8n5M1Q3pc3xZ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Playfair Display Bold Italic'), local('PlayfairDisplay-BoldItalic'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/n7G4PqJvFP2Kubl0VBLDEC0yrwWnmFtrYD74X1HK8I6glnMp3_3A8V8Ai8YosRtX.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: 900;
-  src: local('Playfair Display Black Italic'), local('PlayfairDisplay-BlackItalic'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/n7G4PqJvFP2Kubl0VBLDECqmAZ8R3HLSoTeQiZta-ZOAxg1Bnw5F8n5M1Q3pc3xZ.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: 900;
-  src: local('Playfair Display Black Italic'), local('PlayfairDisplay-BlackItalic'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/n7G4PqJvFP2Kubl0VBLDEHTCel_swxOPj8syZZvSyoOAxg1Bnw5F8n5M1Q3pc3xZ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: 900;
-  src: local('Playfair Display Black Italic'), local('PlayfairDisplay-BlackItalic'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/n7G4PqJvFP2Kubl0VBLDEGf7OVK90wFDrBi2AB4YClaglnMp3_3A8V8Ai8YosRtX.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-
 
 div.longform-group-inner.story-content.standard {
 	padding-top: 0;
@@ -196,7 +39,7 @@ div.asset-promo.promo-splash div.promo-text {
 div.asset-promo.promo-splash div.promo-text p {
 	padding: 0 16px;
 	margin: 0;
-	text-align: center;
+	text-align: left;
 }
 
 /* body text */
@@ -236,7 +79,7 @@ p span.unique_headline:before {
 
 /* Methode h2 spans inside bold tag */
 div.longform-group-inner.story-content.standard p span.h2 {
-	font-family: "Playfair Display", "Merriweather", "Times New Roman", serif;
+	font-family: "Roboto Condensed","Guardian Sans Cond", sans-serif;
 	font-weight: 300;
 	font-size: 32px;
 	line-height: 34px;
@@ -317,7 +160,7 @@ p.first + p + p + p:first-letter {
 	padding-right: 16px;
 	padding-left: 16px;
 	padding-bottom: 4px;
-	font-family: "Playfair Display", "Merriweather", "Times New Roman", serif;
+	font-family: "Roboto Condensed","Guardian Sans Cond", sans-serif;
 	font-weight: 800;
 	margin-right: 8px;
 }
@@ -381,7 +224,7 @@ div.longform-group-inner.story-content.standard p > span.blockquote {
 	border-top: solid 1px #ccc;
 	border-bottom: solid 1px #ccc;
 	text-align: center;
-	font-family: "Playfair Display", "Merriweather", "Times New Roman", serif;
+	font-family: "Roboto Condensed","Guardian Sans Cond", sans-serif;
 	font-size: 18px;
 	line-height: 22px;
 	/*text-transform: uppercase;*/
@@ -433,7 +276,7 @@ div.longform-group.standard-child.highlight/* .byline */,
 	background: #fff;
 	text-shadow: none;
 	border-bottom: none;
-	text-align: center;		
+	text-align: left;		
 }
 div.longform-group.standard-child.highlight.byline div.story-header .story-header_timestamp, 
 div.longform-group.standard-child.highlight.byline div.story-header .story-header_byline-source{
@@ -500,8 +343,9 @@ div.asset-promo.promo-splash div.promo-title {
 .header-container .story-header_title,
 h1.story-header_title {
 	text-shadow: none;
-	font-family: "Playfair Display", "Merriweather", "Times New Roman", serif;
-	font-weight: 600;
+	font-family: "Roboto Condensed","Guardian Sans Cond", sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
 	text-rendering: geometricprecision;
 	line-height: 1em;
 	letter-spacing: 0;
@@ -549,46 +393,47 @@ h1.story-header_title {
 	background: none;
 }
 
-@media screen and (min-width: 800px) {
+/*@media screen and (min-width: 800px) {
 	.longform-group.longform-group-inner.fullwidth-child.header {
 		-webkit-transform: translate3d(0, 5%, 0);
 		-ms-transform: translateX(0) translateY(5%);
 		        transform: translate3d(0, 5%, 0);
 	}
 	
-}
+}*/
 
 
 .header-container h1.story-header_title {
 	font-size: 2.4em;
 	margin-bottom: 0;
-	text-align: center;
+	text-align: left;
 }
 .longform-group.longform-group-inner.fullwidth-child.header d.promo-text p {
-	text-align: center;
+	text-align: left;
 	margin: 4px auto;
 }
 
 h1.story-header_title:before {
 	/*content: '';*/
-	display: table;
+	display: block;
 	margin: 0 auto;
 	letter-spacing: 2px;
 	border-bottom: solid 1px;
-	font-family: "Guardian Sans", sans-serif;
+	font-family: "Roboto Condensed", "Guardian Sans", sans-serif;
+	text-align: left;
 	font-size: 16px;
 	line-height: 16px;
 	text-transform: uppercase;
 	color: #fff;
-	padding: 8px 40px;
+	padding: 8px 0px;
 	margin-bottom: 10px;
 }
 .story-header_title span:nth-of-type(1):before {
 	/*content: '';*/
-	display: table;
+	display: block;
 	margin: 0 auto;
 	margin-bottom: 12px;
-	font-family: "Guardian Sans";
+	font-family: "Roboto Condensed", "Guardian Sans", sans-serif;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 6px;
@@ -711,20 +556,20 @@ div.longform-group-inner.story-content.standard figure.story-asset.story-asset-s
 	}
 	.w_story-header-all figure.promo-image.image-full {
 		height: 0;
-		padding-bottom: 40%;
+		padding-bottom: 50%;
 	}
-	.w_story-header-all figure.promo-image.image-full img {
+	/*.w_story-header-all figure.promo-image.image-full img {
 		top: 50%;
 		position: absolute;
 		-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		        transform: translateY(-50%);
-	}
-	figure.promo-image.image-full {
+	}*/
+	/*figure.promo-image.image-full {
 		-webkit-transform: scale(0.9);
 		-ms-transform: scale(0.9);
 		        transform: scale(0.9);
-	}
+	}*/
 	/*figure.promo-image.image-full img {
 	}*/
 		
@@ -812,7 +657,7 @@ div.longform-group-inner.story-content.standard figure.story-asset.story-asset-s
 	h1.story-header_title:before {/* pre-head first deck */
 		font-size: 24px;
 		line-height: 24px;
-		padding: 8px 64px;
+		padding: 8px 0px;
 		color: #fff;
 	}
 	h1.story-header_title span:nth-of-type(1):before { /* pre-head second deck */
@@ -898,7 +743,7 @@ div.longform-group-inner.story-content.standard figure.story-asset.story-asset-s
 	div.asset-promo.promo-splash div.promo-text p {
 		padding: 0 50px;
 		margin: 4px auto;
-		text-align: center;
+		text-align: left;
 	}
 
 }
