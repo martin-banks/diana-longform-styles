@@ -294,7 +294,7 @@ div.longform-group.standard-child.highlight.byline div.story-header .story-heade
 
 div.longform-group.standard-child.highlight.byline div.story-header {
 	padding-top: 16px;
-	margin-bottom: 8px;
+	margin-bottom: 32px;
 }
 
 div.longform-group.standard-child.highlight.byline div.intro {
@@ -303,10 +303,11 @@ div.longform-group.standard-child.highlight.byline div.intro {
 	padding: 24px 0px 24px 0px;
 	/*border-top: solid 1px #ccc;*/
 	/*border-bottom: solid 1px #ccc; */
-	font-family: "Merriweather", Georgia, serif;
+	/*font-family: "Merriweather", Georgia, serif;*/
+	font-family: 'Roboto Condensed', 'Roboto', sans-serif;
 	font-size: 18px;
 	line-height: 24px;
-	text-transform: none;
+	/*text-transform: none;*/
 	color: #777;
 	width: 90%;
 	max-width: 1000px;
@@ -574,7 +575,7 @@ div.longform-group-inner.story-content.standard figure.story-asset.story-asset-s
 
 /* full width images */
 .longform-group.fullwidth-child {
-	margin-bottom: 40px;
+	margin-bottom: 0px;
 	-webkit-box-shadow: none;
 	        box-shadow: none;
 	background: none;
