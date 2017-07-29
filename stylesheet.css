@@ -434,9 +434,12 @@ h1.story-header_title {
 }
 
 .header-bottom-center .header-container h1.story-header_title {
-	text-align: center;
-	width: 90%;
+	text-align: left;
+	width: 100%;
+	margin: 0 auto;
 }
+
+
 .longform-group.longform-group-inner.fullwidth-child.header d.promo-text p {
 	text-align: left;
 	margin: 4px auto;
@@ -459,7 +462,7 @@ h1.story-header_title:before {
 }
 
 .header-bottom-center h1.story-header_title:before {
-	text-align: center;
+	text-align: left;
 }
 
 .story-header_title span:nth-of-type(1):before {
@@ -474,6 +477,15 @@ h1.story-header_title:before {
 	color: #fff;
 	font-size: 16px;
 	line-height: 16px;
+}
+@media screen and (min-width: 768px) {
+	.header-bottom-center .header-container h1.story-header_title {
+		text-align: center;
+		width: 90%;
+	}
+	.header-bottom-center h1.story-header_title:before {
+		text-align: center;
+	}
 }
 
 /* --------------------------------------------------------------------------- */
