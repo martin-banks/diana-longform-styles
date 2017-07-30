@@ -373,6 +373,8 @@ h1.story-header_title {
 @media screen and (min-width: 768px) {
 	.header-container.overlay {
 		padding-bottom: 5em;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 }
@@ -436,7 +438,7 @@ h1.story-header_title {
 .header-bottom-center .header-container h1.story-header_title {
 	text-align: left;
 	width: 100%;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 }
 
 
@@ -481,7 +483,14 @@ h1.story-header_title:before {
 @media screen and (min-width: 768px) {
 	.header-bottom-center .header-container h1.story-header_title {
 		text-align: center;
-		width: 90%;
+		width: 100%;
+		background: linear-gradient(
+			rgba(0,0,0,0)0%, 
+			rgba(0,0,0,0.4) 20%, 
+			rgba(0,0,0,0.4) 70%, 
+			rgba(0,0,0,0));
+		padding: 0;
+}
 	}
 	.header-bottom-center h1.story-header_title:before {
 		text-align: center;
