@@ -17,9 +17,10 @@ div.longform-group-inner.story-content.standard p {
 	margin-top: 20px;
 }
 
-div.longform-group-inner.story-content.standard p.first {
+/*div.longform-group-inner.story-content.standard p.first {
 	margin-top: -24px;
-}
+}*/
+
 
 /* full screen image promo caption container */
 div.asset-promo.promo-splash div.promo-text {
